@@ -2,6 +2,9 @@ import React from "react";
 import S from './Footer.module.scss'
 import Logo from '../../assets/logo.png'
 import { Link } from "react-router-dom"
+import { Mail, PhoneCall, MapPin } from "lucide-react";
+
+
 
 export default function Footer() {
   return (
@@ -14,11 +17,24 @@ export default function Footer() {
         </div>
 
         <div className={S.boxtextcontato}>
-          <h3>Contato</h3>
-          <p>contato@medico-dentista.org</p>
-          <p>(11) 3000-0000</p>
-          <p>São Paulo, SP </p>
-        </div>
+  <h3>Contato</h3>
+
+  <div className={S.line}>
+    <Mail className={S.icon} />
+    <p>contato@medico-dentista.org</p>
+  </div>
+
+  <div className={S.line}>
+    <PhoneCall className={S.icon} />
+    <p>(11) 3000-0000</p>
+  </div>
+
+  <div className={S.line}>
+    <MapPin className={S.icon} />
+    <p>São Paulo, SP</p>
+  </div>
+</div>
+
 
         <div className={S.boxtextredes}>
             <h3>Redes Sociais</h3>
