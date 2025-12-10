@@ -1,0 +1,239 @@
+.boxhome {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin-top: 2rem;
+
+  .boxtexto {
+    text-align: left;
+    padding:5rem;
+  }
+    h1 {
+      font-size: 4.18rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.60rem;
+      color: #000;
+    }
+  
+  .boximg {
+    margin-top: 2rem;
+  
+    img {
+      width: 620px;
+      height: auto;
+      padding: 30px;
+    }
+}
+    
+  
+  .bottons{
+  
+   .btn1{
+    margin-top: 1.5rem;
+    background-color: #00745a;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+   }
+.btn2{
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    background-color: transparent;
+    color: #00745a;
+    border-radius: 8px;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #00745a;
+    cursor: pointer;
+}
+
+  }
+}
+/* ✅ TABLET */
+@media (max-width: 1024px) {
+  .boxhome {
+    flex-direction: column;
+    text-align: center;
+
+    .boxtexto {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .boximg img {
+      width: 90%;
+      padding: 10px;
+    }
+
+    .bottons {
+      display: flex;
+      justify-content: center;
+
+      .btn2 {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+/* ✅ MOBILE */
+@media (max-width: 600px) {
+  .boxhome {
+    margin-top: 1rem;
+  }
+
+  .boxhome h1 {
+    font-size: 2.2rem;
+  }
+
+  .boxhome p {
+    font-size: 1.1rem;
+  }
+
+  .boxhome .boxtexto {
+    padding: 2rem 1rem;
+  }
+
+  .boxhome .bottons {
+    flex-direction: column;
+    align-items: center;
+
+    .btn1,
+    .btn2 {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .btn2 {
+      margin-left: 0;
+      margin-top: 0.8rem;
+    }
+  }
+}
+.missao{
+    background-color:  #00745A;
+    padding: 2rem 2rem;
+    color:white;
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin:0rem 0.5rem 0.5rem 0;
+        text-align:left;
+      }
+    .cards{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+       
+    }
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+          text-align: center;
+    }
+    p{
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .card{
+        margin-top: 1.5rem;
+        border: 2px solid white;   
+        border-radius: 8px;
+        padding: 0.6rem 1.3rem;
+        font-size: 1rem;
+        font-weight: 200;
+
+    }
+}
+/* ✅ TABLET */
+@media (max-width: 1024px) {
+  .missao {
+    text-align: center;
+
+    p {
+      margin: 0 auto 1rem auto;
+    }
+
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.impacto{
+    padding: 2rem 2rem;
+    color:black;
+    
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin:0rem 0.5rem 0.5rem 0;
+        text-align:center;
+      }
+
+
+      .boxImpacto{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+        .itemImpacto{
+            width: 315px;
+            height: 244px;
+            margin-top: 2rem;
+            border: 2px solid gray;   
+            border-radius: 14px;
+            padding: 0.6rem 1.3rem;
+            font-size: 1rem;
+            font-weight: 200;
+            text-align: center;
+        }
+        h3{
+            font-size: 3.125rem;
+            margin:3rem 1rem;
+            text-align: center;
+            color: #00745A;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            text-align: center;
+            color:black;
+            
+        }
+        @media (max-width: 1024px) {
+          .boxImpacto {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+}

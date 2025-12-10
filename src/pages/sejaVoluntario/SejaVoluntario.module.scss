@@ -1,0 +1,160 @@
+.voluntario{
+    background-color:  white;
+    padding: 2rem 2rem;
+    color:black;
+
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      text-align: center;
+    }
+   
+    .cards{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+       
+    }
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+          text-align: center;
+    }
+    p{
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .card{
+        margin-top: 1.5rem;
+        border: 2px solid black;   
+        border-radius: 8px;
+        padding: 0.6rem 1.3rem;
+        font-size: 1rem;
+        font-weight: 200;
+
+    }
+}
+/* ✅ TABLET */
+@media (max-width: 1024px) {
+  .voluntario {
+    text-align: center;
+
+    p {
+      margin: 0 auto 1rem auto;
+    }
+
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.container {
+  background: #006b52;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.formBox {
+  background: white;
+  width: 100%;
+  max-width: 750px;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+    margin: 1.5rem 0 0.8rem;
+    color: #222;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.row {
+    width: 50%;
+  display:inline;
+  
+
+  input {
+    flex: 1;
+  }
+}
+
+.full {
+    margin-top: 10px;
+width: 100%;
+  display:inline;
+  gap: 1rem;
+
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-size: 0.9rem;
+  outline: none;
+
+  &:focus {
+    border-color: #006b52;
+  }
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.info {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  button {
+    background: #006b52;
+    color: white;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #005744;
+    }
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .formBox {
+    padding: 1.5rem;
+  }
+}

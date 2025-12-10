@@ -1,0 +1,37 @@
+.boxfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5rem 6rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+
+.boxfooter a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600; 
+  padding:  10px 0;
+}
+p{
+    margin: 0.5rem 0;
+}
+.boxtext{
+    max-width: 400px;
+    a{
+       padding: 5px 25px;
+        margin-top: 1rem;
+       
+    }
+}
+
+.copy {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  background: black;
+  color:white
+}

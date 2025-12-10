@@ -1,0 +1,131 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  border-bottom: 2px solid gray;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Menu desktop */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  a:nth-child(2) {
+    background-color: #00745a;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6rem 1.3rem;
+  }
+}
+input {
+  display: none;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 786px) {
+  /* Esconde o checkbox */
+input {
+  display: none;
+}
+
+/* Ícone hamburguer */
+.hamburguer {
+ 
+  width: 25px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburguer span,
+.hamburguer::before,
+.hamburguer::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  border-radius: 8px;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.hamburguer span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburguer::before {
+  top: 0;
+}
+
+.hamburguer::after {
+  bottom: 0;
+}
+
+/* Animações do ícone */
+input:checked + .hamburguer span {
+  transform: scale(0);
+}
+
+input:checked + .hamburguer::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+input:checked + .hamburguer::after {
+  transform: rotate(-45deg);
+  bottom: 50%;
+}
+
+/* Menu mobile */
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: rgb(245, 244, 244);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  gap: 1rem;
+
+  a:nth-child(2) {
+    background-color: #00745a;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6rem 1.3rem;
+  }
+}
+
+/* Abre menu no mobile */
+input:checked ~ .menu {
+  display: flex;
+}
+
+  nav {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+}
