@@ -22,9 +22,7 @@
     margin-top: 2rem;
   
     img {
-      width: 620px;
-      height: auto;
-      padding: 30px;
+      border-radius: 12px;
     }
 }
     
@@ -41,6 +39,11 @@
     font-weight: 500;
     border: none;
     cursor: pointer;
+
+&:hover {
+      background-color: #079672;
+    }
+    
    }
 .btn2{
     margin-left: 1rem;
@@ -54,6 +57,10 @@
     border: 2px solid #00745a;
     cursor: pointer;
 }
+    :hover {
+      background-color: #ebf3f1;
+    }
+    
 
   }
 }
@@ -98,13 +105,16 @@
     margin-top: 1rem;
   }
 
-  .boxhome h1 {
+   h1 {
     font-size: 2.2rem;
   }
 
-  .boxhome p {
+   p {
     font-size: 1.1rem;
   }
+.boximg img {
+      display: none;
+    }
 
   .boxhome .boxtexto {
     padding: 2rem 1rem;
@@ -146,6 +156,7 @@
         gap: 2rem;
         justify-content: center;
        
+       
     }
     h3{
         font-size: 1.5rem;
@@ -164,9 +175,17 @@
         padding: 0.6rem 1.3rem;
         font-size: 1rem;
         font-weight: 200;
+       box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); // sombra verde suave
 
-    }
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+     &:hover {
+    box-shadow: 0 0 18px rgba(0, 255, 0, 0.6); // mais forte
+    transform: translateY(-3px);
+  }
 }
+
+ }
+
 /* ✅ TABLET */
 @media (max-width: 1024px) {
   .missao {
@@ -205,6 +224,13 @@
         justify-content: center;
         margin-top: 20px;
       }
+        .card {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
 
         .itemImpacto{
             width: 315px;
@@ -215,8 +241,14 @@
             padding: 0.6rem 1.3rem;
             font-size: 1rem;
             font-weight: 200;
-            text-align: center;
-        }
+            text-align: center;box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); // sombra verde suave
+          transition: box-shadow 0.3s ease, transform 0.2s ease;
+          &:hover {
+    box-shadow: 0 0 18px rgba(0, 255, 0, 0.6); // mais forte
+    transform: translateY(-3px);
+  }
+}
+        
         h3{
             font-size: 3.125rem;
             margin:3rem 1rem;

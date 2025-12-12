@@ -3,29 +3,36 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 5rem 6rem;
-  gap: 4rem;
+  gap: 3rem;
   flex-wrap: wrap;
   background-color: black;
   color: white;
+
+
+
+ .logo {
+   flex-direction: row;
+  display: flex;
+  gap: 0.6rem;
+   align-items: center;
 }
 
-.boxfooter a {
-  color: #fff;
+a {
   text-decoration: none;
-  font-weight: 600; 
-  padding:  10px 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
 }
-p{
-    margin: 0.5rem 0;
+  .par {
+    font-size: 1rem;
+    margin-top: 25px;
+    max-width: 300px;
+   
+    
+   
+  }
 }
-.boxtext{
-    max-width: 400px;
-    a{
-       padding: 5px 25px;
-        margin-top: 1rem;
-       
-    }
-}
+
 .boxtextcontato {
   display: flex;
   flex-direction: column;
@@ -39,12 +46,22 @@ p{
 .line {
   display: flex;
   align-items: center;
-  gap: 8px; // Espaço entre ícone e texto
+  gap: 8px;
 }
 
 .icon {
   width: 18px;
   height: 18px;
+}
+
+.boxtextredes {
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    cursor: pointer;
+  }
 }
 
 .copy {
@@ -53,5 +70,18 @@ p{
   padding: 1.5rem 1rem;
   font-size: 0.85rem;
   background: black;
-  color:white
+  color: white;
+}
+@media (max-width: 786px) {
+  .boxfooter {
+    padding: 3rem 1.5rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .boxtextcontato,
+  .boxtextredes {
+    align-items: center;
+  }
 }
