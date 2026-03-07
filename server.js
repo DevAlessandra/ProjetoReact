@@ -1,12 +1,18 @@
 import dotenv from "dotenv"
 import express from "express"
 import cors from "cors"
+import process from "process"
 dotenv.config()
 
 const app = express()
-const PORT =  3000
+const PORT = process.env.PORT || 3000
 
-app.use(cors())
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://projetoreact-beige.vercel.app"
+  ]
+}))
 app.use(express.json())
 
 let cadastros = []
