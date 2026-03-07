@@ -22,7 +22,7 @@ const SejaVoluntario = () => {
 async function handleSubmit(e){
   e.preventDefault()
 
-  const response = await fetch("http://localhost:3000/cadastros", {
+  const response = await fetch("https://projetoreact-fop2.onrender.com/cadastros", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
