@@ -63,7 +63,7 @@
   background: white;
   width: 100%;
   max-width: 750px;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
@@ -86,9 +86,9 @@ form {
 }
 
 .row {
-    width: 50%;
-  display:inline;
-  
+    width: 100%;
+  display: flex;
+  gap: 1rem;  
 
   input {
     flex: 1;
