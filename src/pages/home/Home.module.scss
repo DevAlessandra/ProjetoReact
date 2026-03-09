@@ -1,3 +1,14 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .boxhome {
   display: flex;
   flex-direction:row;
@@ -6,7 +17,8 @@
 
   .boxtexto {
     text-align: left;
-    padding:5rem;
+  padding: 5rem;
+  animation: fadeUp 0.8s ease forwards;
   }
     h1 {
       font-size: 4.18rem;
@@ -19,11 +31,12 @@
     }
   
   .boximg {
-    margin-top: 2rem;
-  
-    img {
-      border-radius: 12px;
-    }
+  margin-top: 2rem;
+  animation: fadeUp 1s ease forwards;
+
+  img {
+    border-radius: 12px;
+  }
 }
     
   
